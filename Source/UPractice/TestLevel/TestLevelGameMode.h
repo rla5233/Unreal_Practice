@@ -24,4 +24,6 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	class UClass* CreateClass = nullptr;
 
+	UPROPERTY()
+	class AMonster* Monster = nullptr;
 };
