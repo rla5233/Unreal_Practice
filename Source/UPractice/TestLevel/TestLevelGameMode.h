@@ -15,7 +15,7 @@ class UPRACTICE_API ATestLevelGameMode : public AGameMode
 	GENERATED_BODY()
 
 public:
-	void BeginPlay() override;
+	ATestLevelGameMode();
 	
 private:
 	UPROPERTY(Category = "MemberValue", VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
