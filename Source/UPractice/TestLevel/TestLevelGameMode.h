@@ -21,4 +21,7 @@ private:
 	UPROPERTY(Category = "MemberValue", VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	FTransform CPPTransform;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	class UClass* CreateClass = nullptr;
+
 };
