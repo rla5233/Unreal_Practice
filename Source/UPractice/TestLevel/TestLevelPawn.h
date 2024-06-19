@@ -15,7 +15,7 @@ public:
 	// Sets default values for this pawn's properties
 	ATestLevelPawn();
 
-	UFUNCTION(BluePrintCallable, Category = "Pawn")
+	UFUNCTION(BluePrintCallable, Category = Pawn)
 	void MoveFoward(float _Value);
 
 protected:
@@ -28,5 +28,9 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+private:
+	UPROPERTY(Category = Pawn, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	int TestValue = 0;
 
 };
