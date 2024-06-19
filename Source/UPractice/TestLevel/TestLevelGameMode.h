@@ -13,5 +13,12 @@ UCLASS()
 class UPRACTICE_API ATestLevelGameMode : public AGameMode
 {
 	GENERATED_BODY()
+
+public:
+	void BeginPlay() override;
 	
+private:
+	UPROPERTY(Category = "MemberValue", VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	FTransform CPPTransform;
+
 };
