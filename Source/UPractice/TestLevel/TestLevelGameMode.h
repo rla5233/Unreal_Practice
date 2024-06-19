@@ -16,6 +16,9 @@ class UPRACTICE_API ATestLevelGameMode : public AGameMode
 
 public:
 	ATestLevelGameMode();
+
+public:
+	void BeginPlay() override;
 	
 private:
 	UPROPERTY(Category = "MemberValue", VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
@@ -24,6 +27,4 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	class UClass* CreateClass = nullptr;
 
-	UPROPERTY()
-	class AMonster* Monster = nullptr;
 };
