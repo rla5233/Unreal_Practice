@@ -14,8 +14,11 @@ class UPRACTICE_API UGlobalGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 	
+public:
+	const struct FActorDataRow* GetActorData(FName _Name);
+
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	TArray<class UPaperSprite*> Sprites;
+	UDataTable* ActorDataTable = nullptr;
 
 };

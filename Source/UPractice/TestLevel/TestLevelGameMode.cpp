@@ -16,6 +16,12 @@ void ATestLevelGameMode::BeginPlay()
 	CreateClass = LoadClass<AActor>(nullptr, TEXT("/Script/Engine.Blueprint'/Game/Test/BluePrint/BP_TestLevelActor.BP_TestLevelActor_C'"));
 	FTransform TransForm;
 	GetWorld()->SpawnActor<AActor>(CreateClass, TransForm);
+}
+
+void ATestLevelGameMode::Tick(float _DeltaTime)
+{
+	Super::Tick(_DeltaTime);
 
 	UGlobalGameInstance* GameInst = Cast<UGlobalGameInstance>(GetWorld()->GetGameInstance());
+	GameInst->GetActorData("");
 }

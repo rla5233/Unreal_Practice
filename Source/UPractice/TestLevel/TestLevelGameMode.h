@@ -19,6 +19,7 @@ public:
 
 public:
 	void BeginPlay() override;
+	void Tick(float _DeltaTime) override;
 	
 private:
 	UPROPERTY(Category = "MemberValue", VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
