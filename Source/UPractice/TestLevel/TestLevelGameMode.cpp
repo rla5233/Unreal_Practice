@@ -3,7 +3,7 @@
 
 #include "TestLevel/TestLevelGameMode.h"
 #include "TestLevel/TestLevelActor.h"
-#include "GlobalGameInstance.h"
+#include "Global/GlobalGameInstance.h"
 
 ATestLevelGameMode::ATestLevelGameMode()
 {
