@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+#include "GameFramework/Character.h"
 #include "TestLevelActor.generated.h"
 
 UCLASS()
-class UPRACTICE_API ATestLevelActor : public AActor
+class UPRACTICE_API ATestLevelActor : public ACharacter
 {
 	GENERATED_BODY()
 	

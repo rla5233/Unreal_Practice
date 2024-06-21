@@ -17,7 +17,10 @@ struct FActorDataRow : public FTableRowBase
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resources")
-	TSubclassOf<AActor> Actor;
+	TSubclassOf<AActor> ActorUClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resources")
+	class USkeletalMesh* AnimationMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resources")
 	int HP;

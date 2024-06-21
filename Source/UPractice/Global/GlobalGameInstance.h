@@ -17,6 +17,11 @@ class UPRACTICE_API UGlobalGameInstance : public UGameInstance
 public:
 	const struct FActorDataRow* GetActorData(FName _Name);
 
+	UDataTable* GetActorDateTable()
+	{
+		return ActorDataTable;
+	}
+
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	UDataTable* ActorDataTable = nullptr;

@@ -2,6 +2,7 @@
 
 
 #include "TestLevelActor.h"
+#include "Components/SkeletalMeshComponent.h"
 
 // Sets default values
 ATestLevelActor::ATestLevelActor()
@@ -24,4 +25,3 @@ void ATestLevelActor::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
