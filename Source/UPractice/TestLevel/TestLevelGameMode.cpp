@@ -43,7 +43,6 @@ void ATestLevelGameMode::BeginPlay()
 
 		ATestLevelActor* NewTestActor = Cast<ATestLevelActor>(NewActor);
 		NewTestActor->GetMesh()->SetSkeletalMeshAsset(ActorData->AnimationMesh);
-
 	}
 }
 
