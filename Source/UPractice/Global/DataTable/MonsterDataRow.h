@@ -5,27 +5,21 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Engine/DataTable.h"
-#include "ActorDataRow.generated.h"
+#include "MonsterDataRow.generated.h"
 
 /**
  * 
  */
 USTRUCT(BlueprintType)
-struct FActorDataRow : public FTableRowBase
+struct FMonsterDataRow : public FTableRowBase
 {
 	GENERATED_BODY()
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resources")
-	TSubclassOf<AActor> ActorUClass;
+	TSubclassOf<AActor> MonsterUClass;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resources")
 	class USkeletalMesh* AnimationMesh;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resources")
-	int HP;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resources")
-	float Speed;
 
 };

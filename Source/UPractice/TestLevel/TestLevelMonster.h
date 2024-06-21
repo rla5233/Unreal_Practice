@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "TestLevelActor.generated.h"
+#include "TestLevelMonster.generated.h"
 
 UCLASS()
-class UPRACTICE_API ATestLevelActor : public ACharacter
+class UPRACTICE_API ATestLevelMonster : public ACharacter
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ATestLevelActor();
+
+public:
+	// Sets default values for this character's properties
+	ATestLevelMonster();
 
 protected:
 	// Called when the game starts or when spawned
@@ -22,5 +22,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 };

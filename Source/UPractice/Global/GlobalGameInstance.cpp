@@ -2,23 +2,33 @@
 
 
 #include "GlobalGameInstance.h"
-#include "DataTable/ActorDataRow.h"
+#include "DataTable/MonsterDataRow.h"
 #include "UPractice.h"
 
-const FActorDataRow* UGlobalGameInstance::GetActorData(FName _Name)
+const FMonsterDataRow* UGlobalGameInstance::GetMonsterData(FName _Name)
 {
-	if (nullptr == ActorDataTable)
+	if (nullptr == MonsterDataTable)
 	{
-		UE_LOG(MyLog, Error, TEXT("%S(%u)> ActorDataTable Is Nullptr"), __FUNCTION__, __LINE__);
+		UE_LOG(MyLog, Fatal, TEXT("%S(%u)> MonsterDataTable Is Nullptr"), __FUNCTION__, __LINE__);
 	}
 
-	FActorDataRow* ActorData = ActorDataTable->FindRow<FActorDataRow>(_Name, nullptr);
+	FMonsterDataRow* MonsterData = MonsterDataTable->FindRow<FMonsterDataRow>(_Name, nullptr);
 
-	if (nullptr == ActorData)
+	if (nullptr == MonsterData)
 	{
 		UE_LOG(MyLog, Error, TEXT("%S(%u)> %s Name Data Is Nullptr"), __FUNCTION__, __LINE__);
 		return nullptr;
 	}
 
-	return ActorData;
+	return MonsterData;
+}
+
+UDataTable* UGlobalGameInstance::GetMonsterDataTable()
+{
+	if (nullptr == MonsterDataTable)
+	{
+		UE_LOG(MyLog, Fatal, TEXT("%S(%u)> MonsterDataTable Is Nullptr"), __FUNCTION__, __LINE__);
+	}
+
+	return MonsterDataTable;
 }

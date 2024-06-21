@@ -15,15 +15,12 @@ class UPRACTICE_API UGlobalGameInstance : public UGameInstance
 	GENERATED_BODY()
 	
 public:
-	const struct FActorDataRow* GetActorData(FName _Name);
+	UDataTable* GetMonsterDataTable();
 
-	UDataTable* GetActorDateTable()
-	{
-		return ActorDataTable;
-	}
+	const struct FMonsterDataRow* GetMonsterData(FName _Name);
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	UDataTable* ActorDataTable = nullptr;
+	UDataTable* MonsterDataTable = nullptr;
 
 };
