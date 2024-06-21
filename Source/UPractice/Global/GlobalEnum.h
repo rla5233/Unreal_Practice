@@ -8,7 +8,7 @@
 
 
 UENUM(BlueprintType)
-enum class EPlayerAnim : uint8
+enum class EMonsterAnim : uint8
 {
 	Run,
 	Attack
