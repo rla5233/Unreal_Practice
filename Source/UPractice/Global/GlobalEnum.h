@@ -8,14 +8,15 @@
 
 
 UENUM(BlueprintType)
-enum class EMonsterAnim : uint8
+enum class EZombieAnim : uint8
 {
+	Idle,
 	Run,
 	Attack
 };
 
 UCLASS()
-class UPRACTICE_API UMyEnum : public UObject
+class UPRACTICE_API UGlobalEnum : public UObject
 {
 	GENERATED_BODY()
 	
