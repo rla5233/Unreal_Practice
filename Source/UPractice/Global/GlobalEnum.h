@@ -10,6 +10,8 @@
 UENUM(BlueprintType)
 enum class EZombieAnim : uint8
 {
+	Idle,
+	Walk,
 	Run,
 	Attack
 };
