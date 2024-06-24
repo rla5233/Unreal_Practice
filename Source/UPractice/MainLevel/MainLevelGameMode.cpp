@@ -46,7 +46,7 @@ void AMainLevelGameMode::SpawnRandomDefaultMonster()
 		}
 
 		FTransform InitTrans;
-		InitTrans.SetLocation({ 300.0f, 100.0f, 500.0f });
+		InitTrans.SetLocation({ 2450.0f, 2000.0f, 300.0f });
 		AActor* NewActor = GetWorld()->SpawnActor<AActor>(MonsterData->ActorUClass, InitTrans);
 
 		AMainDefaultMonsterBase* NewDefaultMonster = Cast<AMainDefaultMonsterBase>(NewActor);
