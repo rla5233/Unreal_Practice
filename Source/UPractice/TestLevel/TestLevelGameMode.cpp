@@ -4,7 +4,6 @@
 #include "TestLevel/TestLevelGameMode.h"
 #include "TestLevel/TestLevelMonster.h"
 #include "Global/GlobalGameInstance.h"
-#include "Global/DataTable/MonsterDataRow.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "UPractice.h"
 
