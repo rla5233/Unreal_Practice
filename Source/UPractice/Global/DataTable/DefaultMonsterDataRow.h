@@ -18,8 +18,4 @@ struct UPRACTICE_API FDefaultMonsterDataRow : public FTableRowBase
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resource")
 	TSubclassOf<AActor> ActorUClass;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resource")
-	class USkeletalMesh* AnimMesh;
-
 };

@@ -34,5 +34,6 @@ void ATestLevelPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void ATestLevelPawn::MoveFoward(float _Value)
 {
+	SetActorRelativeScale3D(FVector(100.0f, 0.0f, 0.0f));
 }
 

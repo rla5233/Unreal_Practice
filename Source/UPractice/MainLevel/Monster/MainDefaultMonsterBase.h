@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Global/GlobalEnum.h"
 #include "MainDefaultMonsterBase.generated.h"
 
 UCLASS()
